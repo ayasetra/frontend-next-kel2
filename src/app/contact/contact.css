@@ -1,0 +1,115 @@
+.contact-container {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .contact-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    .contact-header p {
+        color: #555;
+        margin-top: 10px;
+    }
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+    .info-box i {
+        font-size: 28px;
+        color: #007bff;
+    }
+
+    .info-box h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .info-box p {
+        margin: 5px 0 0;
+        color: #555;
+    }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.4s;
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0056b3;
+        }
+
+    .contact-form button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+.info-box i {
+    font-size: 26px;
+    color: #000000;
+    background: #0056b3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Ubah warna teks input dan placeholder jadi hitam */
+.contact-form input,
+.contact-form textarea {
+    color: #1a1a1a; /* teks user hitam */
+}
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: #1a1a1a; /* warna placeholder hitam */
+        opacity: 0.6; /* pastikan warnanya tidak transparan */
+    }
+
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
